@@ -1,8 +1,7 @@
 {
-    "name": "function-php7",
-    "description": "Template for function in PHP 7",
+    "name": "function-php7.0",
+    "description": "Template for function in PHP 7.0",
     "type": "project",
-    "license": "MIT",
     "config": {
         "classmap-authoritative": true
     },

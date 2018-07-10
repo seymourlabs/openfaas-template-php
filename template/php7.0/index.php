@@ -8,5 +8,5 @@ if (file_exists('vendor/autoload.php')) {
 // Requires Function composer's autoload
 require('function/vendor/autoload.php');
 
-$stdin = fgets(STDIN);
+$stdin = file_get_contents("php://stdin");
 $h = (new App\Handler())->handle($stdin);
