@@ -1,7 +1,7 @@
-# PHP templates for openfaas
+# PHP templates for OpenFaaS
 
 ## Versions
-There are templates for PHP 5.6 and latest stable version of PHP 7
+There are templates for PHP 5.6 and latest stable version(s) of PHP 7
 
 ## Usage:
 
@@ -9,6 +9,7 @@ There are templates for PHP 5.6 and latest stable version of PHP 7
 faas-cli template pull https://github.com/seymourlabs/openfaas-template-php
 faas-cli new my-function-php56 --lang php5.6
 faas-cli new my-function-php70 --lang php7.0
+faas-cli new my-function-php71 --lang php7.1
 ```
 
 

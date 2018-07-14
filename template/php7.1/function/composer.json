@@ -1,0 +1,16 @@
+{
+    "name": "function-php7.0",
+    "description": "Template for function in PHP 7.0",
+    "type": "project",
+    "config": {
+        "classmap-authoritative": true
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.0"
+    }
+}
