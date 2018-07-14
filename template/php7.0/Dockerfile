@@ -7,8 +7,6 @@ RUN echo "Pulling watchdog binary from Github."
 ADD https://github.com/openfaas/faas/releases/download/0.8.0/fwatchdog /usr/bin
 RUN chmod +x /usr/bin/fwatchdog
 
-RUN addgroup -S app && adduser -S -g app app
-
 # Core
 WORKDIR /root/
 
@@ -26,7 +24,7 @@ WORKDIR /root/function/
 RUN [[ -f php-extension.sh ]] && sh ./php-extension.sh || \
     echo "php-extension.sh does not exist, skip installing PHP extensions"
 RUN [[ -f composer.lock || -f composer.json ]] && composer install --no-dev || \
-    echo "composer.lock does not exists, skip installing composer dependencies"
+    echo "composer.lock does not exist, skip installing composer dependencies"
 
 WORKDIR /root/
 
