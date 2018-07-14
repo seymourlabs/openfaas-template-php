@@ -1,6 +1,6 @@
 {
-    "name": "function-php7.0",
-    "description": "Template for function in PHP 7.0",
+    "name": "function-php7.1",
+    "description": "Template for function in PHP 7.1",
     "type": "project",
     "config": {
         "classmap-authoritative": true
@@ -11,6 +11,6 @@
         }
     },
     "require": {
-        "php": "^7.0"
+        "php": "^7.1"
     }
 }
