@@ -1,0 +1,12 @@
+{
+    "name": "openfaas/php7.2",
+    "description": "Template for function in PHP 7.2",
+    "type": "metapackage",
+    "license": "MIT",
+    "config": {
+        "classmap-authoritative": true
+    },
+    "require": {
+        "php": "^7.2"
+    }
+}

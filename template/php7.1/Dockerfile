@@ -1,5 +1,8 @@
 FROM php:7.1-alpine
 
+# Composer requirements
+ARG COMPOSER_AUTH='{}'
+ENV COMPOSER_AUTH=${COMPOSER_AUTH}
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Add watchdog
