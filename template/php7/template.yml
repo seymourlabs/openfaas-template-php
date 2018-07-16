@@ -1,2 +1,2 @@
-language: php7.2
+language: php7
 fprocess: php index.php
