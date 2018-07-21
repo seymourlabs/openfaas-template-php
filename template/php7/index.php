@@ -6,7 +6,9 @@ if (file_exists('vendor/autoload.php')) {
 }
 
 // Requires Function composer's autoload
-require('function/vendor/autoload.php');
+if (file_exists('function/vendor/autoload.php')) {
+    require('function/vendor/autoload.php');
+}
 
 $stdin = file_get_contents("php://stdin");
 $response = (new App\Handler())->handle($stdin);

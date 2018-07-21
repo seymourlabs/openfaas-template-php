@@ -29,6 +29,8 @@ RUN [[ -f composer.lock || -f composer.json ]] && composer install --no-dev || \
 
 # Cleanup
 RUN apk del git
+RUN rm -rf /usr/src/php
+RUN { find /usr/local/lib -type f -print0 | xargs -0r strip --strip-all -p 2>/dev/null || true; }
 
 # Entry
 WORKDIR /root/
