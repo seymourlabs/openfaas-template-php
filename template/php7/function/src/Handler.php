@@ -10,8 +10,9 @@ class Handler
 {
     /**
      * @param string $data
+     * @return string
      */
-    public function handle(string $data): void {
-        echo $data;
+    public function handle(string $data): string {
+        return $data;
     }
 }

@@ -2,9 +2,17 @@
 
 namespace App;
 
+/**
+ * Class Handler
+ * @package App
+ */
 class Handler
 {
-    public function handle(string $data): void {
-        echo $data;
+    /**
+     * @param string $data
+     * @return string
+     */
+    public function handle(string $data) {
+        return $data;
     }
 }

@@ -9,4 +9,5 @@ if (file_exists('vendor/autoload.php')) {
 require('function/vendor/autoload.php');
 
 $stdin = file_get_contents("php://stdin");
-$h = (new App\Handler())->handle($stdin);
+$response = (new App\Handler())->handle($stdin);
+echo $response;
