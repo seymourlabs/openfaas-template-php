@@ -44,7 +44,6 @@ That way you can pass in tokens for composer, if necessary, GitHub tokens to get
 
 - Write ARM templates to run on the Raspberry Pi's (try and still get this working with phalcon)
 - Maybe deprecate 5.6 dockerfile?
-- Maybe remove the core php-extension and vendor stuff?
 - Don't run everything as root, create a user and run the watchdog from that
 
 ## Contributing

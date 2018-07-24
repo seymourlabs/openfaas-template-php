@@ -8,7 +8,7 @@ RUN apk add --no-cache git
 
 # Add watchdog
 RUN echo "Pulling watchdog binary from Github."
-ADD https://github.com/openfaas/faas/releases/download/0.8.0/fwatchdog /usr/bin
+RUN curl -sSL https://github.com/openfaas/faas/releases/download/0.8.0/fwatchdog > /usr/bin/fwatchdog
 RUN chmod +x /usr/bin/fwatchdog
 
 # Core
@@ -17,7 +17,6 @@ WORKDIR /root/
 # Function
 COPY index.php php-extension.sh composer.* ./
 RUN chmod u+x ./php-extension.sh && ./php-extension.sh
-RUN composer install --no-dev
 COPY ./function/ ./function/
 WORKDIR /root/function/
 
